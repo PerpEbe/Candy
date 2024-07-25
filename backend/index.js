@@ -44,7 +44,8 @@ app.post("/upload", (req, res) => {
     // Multer upload successful, send response
     res.json({
       success: 1,
-      image_url: `http://localhost:${port}/images/${req.file.filename}`,
+      // image_url: `http://localhost:${port}/images/${req.file.filename}`,
+      image_url: `https://candy-wnwv.onrender.com:${port}/images/${req.file.filename}`,
     });
   });
 });
